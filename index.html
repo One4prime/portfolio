@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Shende | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Rohan Shende</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul id="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="avatar" role="img" aria-label="Rohan Shende">
+            <img class="avatar-img" src="https://i.postimg.cc/XByMm908/Profile-portfolio.jpg" alt="Rohan Shende">
+        </div>
+        <h1>Rohan Shende</h1>
+        <p>Final Semester B.Com Student | Aspiring Data Analyst | SQL, HTML, CSS, Python & Excel | Athlete & Lifelong Learner</p>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <p>
+                Born and raised in Nagpur, I am a final semester B.Com student with a passion for <strong>Data Analytics</strong>. I have hands-on experience with<span> SQL</span>,<span> HTML</span>,<span> CSS</span>,<span> Python</span>, and <span>Excel</span>. Alongside academics, I am a dedicated Cricketer, love reading books, watching movies, and listening to music. I am eager to learn and explore new opportunities to grow professionally.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill-card">
+                <h3>SQL</h3>
+                <div class="skill-bar"><span data-width="95%"></span></div>
+            </div>
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <div class="skill-bar"><span data-width="90%"></span></div>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <div class="skill-bar"><span data-width="55%"></span></div>
+            </div>
+            <div class="skill-card">
+                <h3>Python</h3>
+                <div class="skill-bar"><span data-width="30%"></span></div>
+            </div>
+            <div class="skill-card">
+                <h3>Excel</h3>
+                <div class="skill-bar"><span data-width="50%"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <a href='https://postimg.cc/K4BSFrTK' target='_blank'><img src='https://i.postimg.cc/tRmX3BCz/image-82b0a43e.png' border='10' alt='image-82b0a43e'></a>
+                <div class="content">
+                    <h3>Ecommerce SQL Project</h3>
+                    <p>Designed and implemented a database for managing products, customers, and orders in an e-commerce system using MySQL.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <a href='https://postimg.cc/87BLV3pW' target='_blank'><img src='https://i.postimg.cc/FHwp05wP/Hoapital-Management.jpg' border='10' alt='Hoapital-Management'></a>
+                <div class="content">
+                    <h3>Hospital Management</h3>
+                    <p>Created a database system for hospital operations including patients, staff, appointments, and billing management.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/gjMqJfvQ/Instituition-Center.jpg' border='10' alt='Instituition-Center'></a>
+                <div class="content">
+                    <h3>Coaching Institution</h3>
+                    <p>Developed a MySQL database for managing students, courses, attendance, and results for a coaching institute.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button>Send Message</button>
+            <p>Email: <a href="mailto:rohanshende51296@gmail.com"><img class="social-icon" src="https://i.postimg.cc/j26GC6cn/Gmail.png" alt="Email"></a> <a href="mailto:rohanshende51296@gmail.com">rohanshende51296@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/rohan-shende-285b28240" target="_blank"><img class="social-icon" src="https://i.postimg.cc/PqhT4xpj/hd-round-circular-linkedin.png" alt="LinkedIn"></a> <a href="https://www.linkedin.com/in/rohan-shende-285b28240" target="_blank">linkedin.com/in/rohan-shende</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Rohan Shende | Portfolio</p>
+        <p>
+            <a href="https://www.linkedin.com/in/rohan-shende-285b28240" target="_blank">LinkedIn</a> | 
+            <a href="mailto:rohanshende51296@gmail.com">Email</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
