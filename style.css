@@ -39,7 +39,7 @@ nav ul li a:hover { color: #ff5722; }
 /* Hero Section */
 .hero { text-align: center; position: relative; overflow: hidden; }
 .hero .avatar {
-    --avatar-url: url('https://i.postimg.cc/XByMm908/Profile-portfolio.jpg');
+    --avatar-url: url('https://i.postimg.cc/xCWf1tn5/profile-portfolio-new-image.jpg');
     width: 160px;
     height: 160px;
     border-radius: 50%;
