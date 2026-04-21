@@ -259,3 +259,23 @@ footer a:hover { color: #ffffff; }
         filter: blur(10px) brightness(0.68);
     }
 }
+
+#popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #222;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s ease;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+#popup.show {
+    opacity: 1;
+    transform: translateY(0);
+}
