@@ -98,17 +98,52 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
+
+     <section id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contact-form">
+        
         <div class="contact-form">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea rows="5" placeholder="Your Message"></textarea>
-            <button>Send Message</button>
-            <p>Email: <a href="mailto:rohanshende51296@gmail.com"><img class="social-icon" src="https://i.postimg.cc/j26GC6cn/Gmail.png" alt="Email"></a> <a href="mailto:rohanshende51296@gmail.com">rohanshende51296@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/rohan-shende-285b28240" target="_blank"><img class="social-icon" src="https://i.postimg.cc/PqhT4xpj/hd-round-circular-linkedin.png" alt="LinkedIn"></a> <a href="https://www.linkedin.com/in/rohan-shende-285b28240" target="_blank">linkedin.com/in/rohan-shende</a></p>
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <input type="hidden" name="_subject" value="New message from portfolio!">
+            <input type="hidden" name="_captcha" value="false">
+
+            <button type="submit">Send Message</button>
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+
+            <!-- Contact Info with Icons -->
+            <div class="contact-links">
+
+                <p>
+                    <a href="mailto:rohanshende51296@gmail.com">
+                        <img class="social-icon" src="https://i.postimg.cc/j26GC6cn/Gmail.png" alt="Email">
+                    </a>
+                    <a href="mailto:rohanshende51296@gmail.com">
+                        rohanshende51296@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <a href="https://www.linkedin.com/in/rohan-shende-285b28240" target="_blank">
+                        <img class="social-icon" src="https://i.postimg.cc/PqhT4xpj/hd-round-circular-linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.linkedin.com/in/rohan-shende-285b28240" target="_blank">
+                        linkedin.com/in/rohan-shende
+                    </a>
+                </p>
+
+            </div>
+
         </div>
-    </section>
+    </form>
+</section>
 
     <!-- Footer -->
     <footer>
@@ -118,7 +153,7 @@
             <a href="mailto:rohanshende51296@gmail.com">Email</a>
         </p>
     </footer>
-
+    <div id="popup"></div>
     <script src="script.js"></script>
 </body>
 </html>
