@@ -10,14 +10,14 @@ window.addEventListener('scroll', () => {
 
     skills.forEach(skill => {
         const skillTop = skill.getBoundingClientRect().top;
-        if(skillTop < triggerBottom){
+        if (skillTop < triggerBottom) {
             skill.style.width = skill.getAttribute('data-width');
         }
     });
 });
 
 // Contact form submission
-document.getElementById("contact-form").addEventListener("submit", async function(e) {
+document.getElementById("contact-form").addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const form = e.target;
