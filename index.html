@@ -12,9 +12,12 @@
 <body>
 
     <!-- Navigation -->
-    <nav>
+    <nav class="main-nav" data-theme="dark">
         <div class="logo">Rohan Shende</div>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color mode">🌙</button>
+            <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</div>
+        </div>
         <ul id="nav-links">
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About Me</a></li>
@@ -120,6 +123,7 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -165,6 +169,16 @@
                         </a>
                     </p>
 
+                    <p>
+                        <a href="https://github.com/One4prime" target="_blank">
+                            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                alt="GitHub">
+                        </a>
+                        <a href="https://github.com/One4prime" target="_blank">
+                            github.com/One4prime
+                        </a>
+                    </p>
+
                 </div>
 
             </div>
@@ -180,6 +194,7 @@
         </p>
     </footer>
     <div id="popup"></div>
+    <script src="nav.jsx"></script>
     <script src="script.js"></script>
 </body>
 

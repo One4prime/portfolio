@@ -1,8 +1,3 @@
-// Toggle mobile menu
-function toggleMenu() {
-    document.getElementById('nav-links').classList.toggle('show');
-}
-
 // Animate skill bars on scroll
 window.addEventListener('scroll', () => {
     const skills = document.querySelectorAll('.skill-bar span');
@@ -14,6 +9,39 @@ window.addEventListener('scroll', () => {
             skill.style.width = skill.getAttribute('data-width');
         }
     });
+});
+
+// Contact form submission
+const contactForm = document.getElementById('contact-form');
+const popup = document.getElementById('popup');
+
+contactForm?.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch('https://formspree.io/f/xaqadrgb', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                Accept: 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            popup.innerText = 'Message sent successfully ✅';
+            form.reset();
+        } else {
+            popup.innerText = 'Something went wrong ❌';
+        }
+    } catch (error) {
+        popup.innerText = 'Error sending message ⚠️';
+    }
+
+    popup.classList.add('show');
+    setTimeout(() => popup.classList.remove('show'), 3000);
 });
 
 // Contact form submission
